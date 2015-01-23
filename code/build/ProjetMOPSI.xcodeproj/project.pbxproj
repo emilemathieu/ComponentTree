@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		05649E94A2E34C5C999DC5E5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6403E933BA6645CE87271BC6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				C46574EE653D46EAB9C5C1E3 /* CMake Rules */,
+			);
+			dependencies = (
+				6920C40E6954422FABF44E45 /* PBXTargetDependency */,
+				6AB6D284BD274713B2C1EA32 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		EF81BD7B0ED049E69EAB092E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A0575B325B234B919F446DAB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7D87A04AC48448D59E1AD7C3 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		979FC97649894855A4B9A83E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E71E2E40ACB4C20B8530B37 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FC5FFE721A72C1FF00C7F692 /* Pixel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC5FFE701A72C1FF00C7F692 /* Pixel.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		115CC8B640D444B482357670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38287AFE4D35498BBBAB8763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81611BBFE3BF4B2DA3D899B8;
+			remoteInfo = ProjetMOPSI;
+		};
+		9DFC76F3CBFA4A4ABE1F6193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38287AFE4D35498BBBAB8763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF81BD7B0ED049E69EAB092E;
+			remoteInfo = ZERO_CHECK;
+		};
+		F1BABD3B3B9F4D6EA1C0DEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38287AFE4D35498BBBAB8763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF81BD7B0ED049E69EAB092E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A2B761C21CB4202AD7702CC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		20DC44307CCE4900803D58B3 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3E71E2E40ACB4C20B8530B37 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		4AD3B6496E4D440EAFAF6BB4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4E3B6079B4CE4CFCBD992E42 /* tree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = tree.h; sourceTree = SOURCE_ROOT; };
+		593D051979CF4E328A63A2F8 /* ProjetMOPSI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ProjetMOPSI; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FFE701A72C1FF00C7F692 /* Pixel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pixel.cpp; sourceTree = "<group>"; };
+		FC5FFE711A72C1FF00C7F692 /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pixel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10F8B5AF15084B5E8F9B5358 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1C73C4C5122C4F18A1A4A08D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				10F8B5AF15084B5E8F9B5358 /* CMake Rules */,
+				4AD3B6496E4D440EAFAF6BB4 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		20D64E0248AD49B9A2198989 = {
+			isa = PBXGroup;
+			children = (
+				8057B3733F34427E96868725 /* Sources */,
+				6053B0DF17064D9891CB6096 /* Resources */,
+				7A862FEED55B41EE856F1483 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6053B0DF17064D9891CB6096 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A862FEED55B41EE856F1483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593D051979CF4E328A63A2F8 /* ProjetMOPSI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8057B3733F34427E96868725 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1C73C4C5122C4F18A1A4A08D /* ALL_BUILD */,
+				C6C7D79A46514DCFA923B6D6 /* ProjetMOPSI */,
+				C241BC6D74F841AC8B897B09 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8971B6CEE97A4B9AA5142C93 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C241BC6D74F841AC8B897B09 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				8971B6CEE97A4B9AA5142C93 /* CMake Rules */,
+				0A2B761C21CB4202AD7702CC /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		C40CB9985F2748A381CFA32F /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC5FFE711A72C1FF00C7F692 /* Pixel.h */,
+				4E3B6079B4CE4CFCBD992E42 /* tree.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C6A7ECE706CC4ECB87ACD009 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC5FFE701A72C1FF00C7F692 /* Pixel.cpp */,
+				3E71E2E40ACB4C20B8530B37 /* main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C6C7D79A46514DCFA923B6D6 /* ProjetMOPSI */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7ECE706CC4ECB87ACD009 /* Source Files */,
+				C40CB9985F2748A381CFA32F /* Header Files */,
+				20DC44307CCE4900803D58B3 /* CMakeLists.txt */,
+			);
+			name = ProjetMOPSI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81611BBFE3BF4B2DA3D899B8 /* ProjetMOPSI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407009391E9D4323BE5F266D /* Build configuration list for PBXNativeTarget "ProjetMOPSI" */;
+			buildPhases = (
+				E943D743D5334EB683B8FF5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C383C8C31DE2448A8E7FE651 /* PBXTargetDependency */,
+			);
+			name = ProjetMOPSI;
+			productName = ProjetMOPSI;
+			productReference = 593D051979CF4E328A63A2F8 /* ProjetMOPSI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38287AFE4D35498BBBAB8763 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = F06379FE28E74667A74DF5C1 /* Build configuration list for PBXProject "ProjetMOPSI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20D64E0248AD49B9A2198989;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				05649E94A2E34C5C999DC5E5 /* ALL_BUILD */,
+				81611BBFE3BF4B2DA3D899B8 /* ProjetMOPSI */,
+				EF81BD7B0ED049E69EAB092E /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D87A04AC48448D59E1AD7C3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build -f /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C46574EE653D46EAB9C5C1E3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build -f /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E943D743D5334EB683B8FF5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5FFE721A72C1FF00C7F692 /* Pixel.cpp in Sources */,
+				979FC97649894855A4B9A83E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6920C40E6954422FABF44E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81611BBFE3BF4B2DA3D899B8 /* ProjetMOPSI */;
+			targetProxy = 115CC8B640D444B482357670 /* PBXContainerItemProxy */;
+		};
+		6AB6D284BD274713B2C1EA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF81BD7B0ED049E69EAB092E /* ZERO_CHECK */;
+			targetProxy = 9DFC76F3CBFA4A4ABE1F6193 /* PBXContainerItemProxy */;
+		};
+		C383C8C31DE2448A8E7FE651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF81BD7B0ED049E69EAB092E /* ZERO_CHECK */;
+			targetProxy = F1BABD3B3B9F4D6EA1C0DEB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03F1616D137A45E0B816E0B6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		125032A8AC3845D19F56130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ProjetMOPSI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		18934D186CDD401EB5969B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		3900DF47BC9F41AE8065874F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ProjetMOPSI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		390AE48D104E4CA29FD2AEA8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		445BF9EE7C7A4C9A841736A3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4529C34FED3D43AF9050021F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/build;
+			};
+			name = Debug;
+		};
+		4F6C8CAF2EB34B89A9D33206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/build;
+			};
+			name = Release;
+		};
+		927A5CC9151940BC8F816CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		9B7A031F89184B2382B362C9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B6EACF3D3F9E4717A64DA0C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		C0059EE4D0054279AD8A6FC5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/build;
+			};
+			name = MinSizeRel;
+		};
+		CA5EAA2C671845AA98F78D3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ProjetMOPSI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		CD5D15EE7FCB4F2D89ECD40A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		CEE96542FE7F4DE5A0573827 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		F236F5C510944605AF18F3F9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ProjetMOPSI;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/code/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		407009391E9D4323BE5F266D /* Build configuration list for PBXNativeTarget "ProjetMOPSI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125032A8AC3845D19F56130C /* Debug */,
+				CA5EAA2C671845AA98F78D3F /* Release */,
+				F236F5C510944605AF18F3F9 /* MinSizeRel */,
+				3900DF47BC9F41AE8065874F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6403E933BA6645CE87271BC6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18934D186CDD401EB5969B71 /* Debug */,
+				B6EACF3D3F9E4717A64DA0C4 /* Release */,
+				445BF9EE7C7A4C9A841736A3 /* MinSizeRel */,
+				390AE48D104E4CA29FD2AEA8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A0575B325B234B919F446DAB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927A5CC9151940BC8F816CFE /* Debug */,
+				CD5D15EE7FCB4F2D89ECD40A /* Release */,
+				9B7A031F89184B2382B362C9 /* MinSizeRel */,
+				03F1616D137A45E0B816E0B6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F06379FE28E74667A74DF5C1 /* Build configuration list for PBXProject "ProjetMOPSI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4529C34FED3D43AF9050021F /* Debug */,
+				4F6C8CAF2EB34B89A9D33206 /* Release */,
+				C0059EE4D0054279AD8A6FC5 /* MinSizeRel */,
+				CEE96542FE7F4DE5A0573827 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38287AFE4D35498BBBAB8763 /* Project object */;
+}
