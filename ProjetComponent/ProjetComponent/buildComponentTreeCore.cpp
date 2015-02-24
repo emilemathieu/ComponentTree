@@ -5,35 +5,35 @@
 #include <queue>
 #include "buildComponentTree.h"
 
-inline void GetProcessedNeighbors(const vector<double> F, int rows, int cols, Pixel p, Pixel* neighbors, int* neighborNum, const int* mask)
+inline void GetProcessedNeighbors(const vector<double> F, int rows, int cols, Pixel p, Pixel* neighbors, int* neighborNum, vector<int> mask)
 {
 	Pixel index = p+1;	//	index from 1
 	*neighborNum = 0;
     int elemNum = rows * cols;
 
-	//	Top :
-	if (index % rows != 1 && F[p-1] >= F[p] && mask[p-1] != 0)
-	{
-		neighbors[(*neighborNum)++] = p-1;
-	}
-
-	//	Bottom :
-	if (index % rows != 0 && F[p+1] >= F[p] && mask[p+1] != 0)
-	{
-		neighbors[(*neighborNum)++] = p+1;
-	}
-
-	//	Left :
-	if (p - rows >= 0 && F[p - rows] >= F[p] && mask[p - rows] != 0)
-	{
-		neighbors[(*neighborNum)++] = p - rows;
-	}
-
-	//	Right :
-	if (p + rows < elemNum && F[p + rows] >= F[p] && mask[p + rows] != 0)
-	{
-		neighbors[(*neighborNum)++] = p + rows;
-	}
+    //	Top :
+    if (p - cols >= 0 && F[p - cols] >= F[p] && mask[p - cols] != 0)
+    {
+        neighbors[(*neighborNum)++] = p - cols;
+    }
+    
+    //	Bottom :
+    if (p + cols < elemNum && F[p + cols] >= F[p] && mask[p + cols] != 0)
+    {
+        neighbors[(*neighborNum)++] = p + cols;
+    }
+    
+    //	Left :
+    if (index % cols != 1 && F[p-1] >= F[p] && mask[p-1] != 0)
+    {
+        neighbors[(*neighborNum)++] = p - 1;
+    }
+    
+    //	Right :
+    if (index % cols != 0 && F[p+1] >= F[p] && mask[p+1] != 0)
+    {
+        neighbors[(*neighborNum)++] = p + 1;
+    }
 }
 
 Pixel MergeNodes(Pixel x, Pixel y, CollectionSet & nodeSet, vector<TreeNode> & treeNodes)
@@ -54,7 +54,7 @@ Pixel MergeNodes(Pixel x, Pixel y, CollectionSet & nodeSet, vector<TreeNode> & t
 	return t1;
 }
 
-void PreOrderTree(const TreeNode & root, vector<double> & nodes, vector<pair<Pixel,Pixel> > & adjs)
+/*void PreOrderTree(const TreeNode & root, vector<double> & nodes, vector<pair<Pixel,Pixel> > & adjs)
 {
     nodes.push_back(root.level);
     
@@ -64,7 +64,7 @@ void PreOrderTree(const TreeNode & root, vector<double> & nodes, vector<pair<Pix
         adjs.push_back(pair<Pixel,Pixel>(root.level, (*iter).level));
         PreOrderTree(*iter, nodes, adjs);
     }
-}
+}*/
 
 Image reconstructImage(int rows, int cols,vector<TreeNode> treeNodes, CollectionSet nodeSet, TreeNode treeRoot, int minimumArea=0){
     int elemNum = rows * cols;
@@ -128,17 +128,21 @@ void ComponentAlgorithm(Image image) {
     for (int p = 0; p < elemNum; p++) {
         treeSet.makeSet(p);
         nodeSet.makeSet(p);
-        treeNodes[p] = TreeNode::TreeNode(F[p],p);
+        treeNodes[p] = TreeNode(F[p],p);
         lowestNode[p] = p;
-        processedMask[p] = 1;
+        processedMask[p] = 0;
     }
  
     //  Process
     for (int i = 0; i < elemNum; i++) {
+        cout << "Step " << i << endl;
         p = decreaseOrder[i];
+        if (p==3) {
+            
+        }
         curTree = treeSet.find(p);
         curNode = nodeSet.find(lowestNode[curTree]);
-        GetProcessedNeighbors(F, rows, cols, p, neighbors, &neighborNum, &(processedMask[0]));
+        GetProcessedNeighbors(F, rows, cols, p, neighbors, &neighborNum, processedMask);
         for (int j = 0; j < neighborNum; j++) {
             q = neighbors[j];
             adjTree = treeSet.find(q);
@@ -167,9 +171,9 @@ void ComponentAlgorithm(Image image) {
     reconstructImage(rows,cols,treeNodes,nodeSet,treeNodes[treeRoot],3).display();
     
  //  Generate tree export a vector of parent pointers
- vector<double> nodes;
- vector<pair<Pixel,Pixel> > adjs;
- PreOrderTree(treeNodes[treeRoot], nodes, adjs);
+ //vector<double> nodes;
+ //vector<pair<Pixel,Pixel> > adjs;
+ //PreOrderTree(treeNodes[treeRoot], nodes, adjs);
      
  }
 
@@ -178,14 +182,14 @@ int main(){
     vector<double> F = vector<double> {110, 90, 100,50, 50, 50,40, 20, 50,50, 50, 50,120, 70, 80};
     Image image1 = Image(F,5,3);
     image1.display();
-    image1.displayCrossSections();
+    //image1.displayCrossSections();
     ComponentAlgorithm(image1);
     
     vector<double> G = vector<double> {1,1,1,1,1,1,1,1,3,3,2,3,4,1,1,3,3,2,3,4,1,1,1,1,1,1,3,1,1,3,3,2,1,1,1,1,4,3,2,2,2,1,1,1,1,1,1,1,1};
     Image image2 = Image(G,7,7);
-    image2.display();
-    image2.displayCrossSections();
-    ComponentAlgorithm(image2);
+    //image2.display();
+    //image2.displayCrossSections();
+    //ComponentAlgorithm(image2);
         
     return 0;
 }
