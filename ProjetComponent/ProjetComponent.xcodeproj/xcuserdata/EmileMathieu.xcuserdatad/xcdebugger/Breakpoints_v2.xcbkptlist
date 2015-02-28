@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
             endingLineNumber = "105"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -109,7 +109,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
             endingLineNumber = "130"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -141,7 +141,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
             endingLineNumber = "112"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
@@ -189,7 +189,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -200,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
@@ -216,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
@@ -253,7 +253,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -269,7 +269,23 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
             endingLineNumber = "137"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjetComponent/buildComponentTreeCore.cpp"
+            timestampString = "446486031.707178"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -280,12 +296,90 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjetComponent/buildComponentTreeCore.cpp"
-            timestampString = "446486031.707178"
+            timestampString = "446757467.620521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "ComponentAlgorithm(Image image)"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComponentAlgorithm(Image, bool)"
+                  moduleName = "ProjetComponent"
+                  urlString = "file:///Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/ProjetComponent/ProjetComponent/buildComponentTreeCore.cpp"
+                  timestampString = "446818484.896944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "1248">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComponentAlgorithm(Image, bool)"
+                  moduleName = "ProjetComponent"
+                  urlString = "file:///Users/EmileMathieu/Desktop/IMI/MOPSI/Projet/ProjetComponent/ProjetComponent/buildComponentTreeCore.cpp"
+                  timestampString = "446818484.897191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "2088">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjetComponent/buildComponentTreeCore.cpp"
+            timestampString = "446751007.015334"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjetComponent/buildComponentTreeCore.cpp"
+            timestampString = "446757467.620521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjetComponent/buildComponentTreeCore.cpp"
+            timestampString = "446757467.620521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "ComponentAlgorithm(Image image, bool verbose=false)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

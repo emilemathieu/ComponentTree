@@ -102,7 +102,7 @@ Image reconstructImage(int rows, int cols,vector<TreeNode> treeNodes, Collection
     return Image(F,rows,cols);
 }
 
-void ComponentAlgorithm(Image image) {
+void ComponentAlgorithm(Image image, bool verbose=false) {
     
     //  Get input data
     vector<double> F = image.pixels;
@@ -115,13 +115,13 @@ void ComponentAlgorithm(Image image) {
     CollectionSet treeSet;
     CollectionSet nodeSet;
 	vector<TreeNode> treeNodes;
-	vector<Pixel> lowestNode;
+	vector<Pixel> subtreeRoot;
 	vector<int> processedMask;
-	Pixel p, q, curTree, curNode, adjTree, adjNode, neighbors[4];
+	Pixel p, q, curCanonicalElt, curNode, adjCanonicalElt, adjNode, neighbors[4];
 	int neighborNum = 0;
  
     treeNodes.resize(elemNum);
-    lowestNode.resize(elemNum);
+    subtreeRoot.resize(elemNum);
     processedMask.resize(elemNum);
  
     //  Pre-process
@@ -129,51 +129,61 @@ void ComponentAlgorithm(Image image) {
         treeSet.makeSet(p);
         nodeSet.makeSet(p);
         treeNodes[p] = TreeNode(F[p],p);
-        lowestNode[p] = p;
+        subtreeRoot[p] = p;
         processedMask[p] = 0;
     }
  
     //  Process
     for (int i = 0; i < elemNum; i++) {
-        cout << "Step " << i << endl;
         p = decreaseOrder[i];
+        if (verbose) {cout << "Step " << i << ": Pixel " << p << endl;}
         if (p==3) {
             
         }
-        curTree = treeSet.find(p);
-        curNode = nodeSet.find(lowestNode[curTree]);
+        curCanonicalElt = treeSet.find(p);
+        curNode = nodeSet.find(subtreeRoot[curCanonicalElt]);
+        //curNode = nodeSet.find(curCanonicalElt);
         GetProcessedNeighbors(F, rows, cols, p, neighbors, &neighborNum, processedMask);
         for (int j = 0; j < neighborNum; j++) {
             q = neighbors[j];
-            adjTree = treeSet.find(q);
-            adjNode = nodeSet.find(lowestNode[adjTree]);
+            if (verbose) {cout << "  -Neighboor Pixel " << q <<": ";}
+            adjCanonicalElt = treeSet.find(q);
+            cout << subtreeRoot[adjCanonicalElt] << " vs " << nodeSet.find(adjCanonicalElt) << " vs " << nodeSet.find(subtreeRoot[adjCanonicalElt])<< "; ";
+            adjNode = nodeSet.find(subtreeRoot[adjCanonicalElt]);
             if (curNode != adjNode) {
                 if (treeNodes[curNode].level == treeNodes[adjNode].level) {
-                    curNode = MergeNodes(adjNode, curNode, nodeSet, treeNodes);
+                    if (verbose) {cout << "Nodes "<< curNode <<" & "<< adjNode<<" merged";}
+                    curNode = MergeNodes(curNode, adjNode, nodeSet, treeNodes);
+                    if (verbose) {cout << " (" << curNode << " as CE)";}
                 }
                 else {
+                    if (verbose) {cout << adjNode << " and his children added to " <<curNode;}
                     treeNodes[curNode].addChild(treeNodes[adjNode]);
                     treeNodes[curNode].area += treeNodes[adjNode].area;
                     treeNodes[curNode].highest = max(treeNodes[curNode].highest, treeNodes[adjNode].highest);
                 }
             }
-            curTree = treeSet.link(adjTree, curTree);
-            lowestNode[curTree] = curNode;
+            else {
+                if (verbose) {cout << "Same nodes";}
+            }
+            curCanonicalElt = treeSet.link(adjCanonicalElt, curCanonicalElt);
+            subtreeRoot[curCanonicalElt] = curNode;
+            if (verbose) {cout << endl;}
         }
         processedMask[p] = 1;
     }
  
  //  Get the root of tree
-	Pixel treeRoot = lowestNode[treeSet.find(nodeSet.find(0))];
+	Pixel treeRoot = subtreeRoot[treeSet.find(nodeSet.find(0))];
     //treeNodes[nodeSet.find(decreaseOrder.back())].display("* ");
     treeNodes[treeRoot].display("* ");
 
-    reconstructImage(rows,cols,treeNodes,nodeSet,treeNodes[treeRoot],3).display();
+    reconstructImage(rows,cols,treeNodes,nodeSet,treeNodes[treeRoot],1).display();
     
  //  Generate tree export a vector of parent pointers
- //vector<double> nodes;
- //vector<pair<Pixel,Pixel> > adjs;
- //PreOrderTree(treeNodes[treeRoot], nodes, adjs);
+ /*vector<double> nodes;
+ vector<pair<Pixel,Pixel> > adjs;
+ PreOrderTree(treeNodes[treeRoot], nodes, adjs);*/
      
  }
 
@@ -183,7 +193,7 @@ int main(){
     Image image1 = Image(F,5,3);
     image1.display();
     //image1.displayCrossSections();
-    ComponentAlgorithm(image1);
+    ComponentAlgorithm(image1,true);
     
     vector<double> G = vector<double> {1,1,1,1,1,1,1,1,3,3,2,3,4,1,1,3,3,2,3,4,1,1,1,1,1,1,3,1,1,3,3,2,1,1,1,1,4,3,2,2,2,1,1,1,1,1,1,1,1};
     Image image2 = Image(G,7,7);
