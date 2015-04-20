@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCE5C6CB1A8F6C0600764FE0 /* buildComponentTreeCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C6CA1A8F6C0600764FE0 /* buildComponentTreeCore.cpp */; };
-		FCE5C6CE1A8FB59100764FE0 /* buildComponentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C6CD1A8FB59100764FE0 /* buildComponentTree.cpp */; };
+		FC8E58601AA62B9800E6CC63 /* ComponentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC8E585D1AA62B9800E6CC63 /* ComponentTree.cpp */; };
+		FC8E58611AA62B9800E6CC63 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC8E585F1AA62B9800E6CC63 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC8E585D1AA62B9800E6CC63 /* ComponentTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentTree.cpp; sourceTree = "<group>"; };
+		FC8E585E1AA62B9800E6CC63 /* ComponentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentTree.h; sourceTree = "<group>"; };
+		FC8E585F1AA62B9800E6CC63 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FCE5C6BF1A8F6BB900764FE0 /* ProjetComponent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjetComponent; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCE5C6CA1A8F6C0600764FE0 /* buildComponentTreeCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buildComponentTreeCore.cpp; sourceTree = "<group>"; };
-		FCE5C6CC1A8F8ECE00764FE0 /* buildComponentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buildComponentTree.h; sourceTree = "<group>"; };
-		FCE5C6CD1A8FB59100764FE0 /* buildComponentTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buildComponentTree.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 		FCE5C6C11A8F6BB900764FE0 /* ProjetComponent */ = {
 			isa = PBXGroup;
 			children = (
-				FCE5C6CC1A8F8ECE00764FE0 /* buildComponentTree.h */,
-				FCE5C6CD1A8FB59100764FE0 /* buildComponentTree.cpp */,
-				FCE5C6CA1A8F6C0600764FE0 /* buildComponentTreeCore.cpp */,
+				FC8E585D1AA62B9800E6CC63 /* ComponentTree.cpp */,
+				FC8E585E1AA62B9800E6CC63 /* ComponentTree.h */,
+				FC8E585F1AA62B9800E6CC63 /* main.cpp */,
 			);
 			path = ProjetComponent;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE5C6CE1A8FB59100764FE0 /* buildComponentTree.cpp in Sources */,
-				FCE5C6CB1A8F6C0600764FE0 /* buildComponentTreeCore.cpp in Sources */,
+				FC8E58601AA62B9800E6CC63 /* ComponentTree.cpp in Sources */,
+				FC8E58611AA62B9800E6CC63 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +238,7 @@
 				FCE5C6C81A8F6BB900764FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
